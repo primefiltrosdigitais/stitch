@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="https://primefiltrosdigitais.github.io/stitch/logo.png"> <!-- Mudar essa parte -->
+  <title>stitch</title> <!-- Mudar essa parte -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="camera-container">
+
+    <video id="camera" autoplay playsinline></video>
+
+
+    <img id="overlay" src="moldura_normal.png" alt="Moldura Traseira" class="overlay" />
+
+    <img id="front-overlay" src="moldura_invertida.png" alt="Moldura Frontal" class="overlay" style="display:none;" />
+
+
+    <img id="preview" style="width: 100%; height: auto;" />
+
+
+    <div class="bottom-controls">
+      <button id="flip-camera"><img src="trocar.svg" alt="Trocar Câmera"></button>
+      <button id="capture-btn"><img src="capturar.svg" alt="Capturar Foto"></button>
+    </div>
+
+
+    <div id="photo-container" class="hidden">
+      <img id="captured-photo" src="" alt="Foto Capturada" />
+      <button id="save-btn">Salvar Foto</button>
+      <button id="retake-btn">Tirar Outra Foto</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
